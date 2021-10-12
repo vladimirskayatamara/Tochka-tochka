@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="css/style.min.css">
+    <title>TochkaTochka</title>
+</head>
+
+<body>
+    <div class="body-wrapper">
+
+
+        <div class="main-content">
+            <h1 class="main-content__title">FTL: Прямая машина</h1>
+            <form>
+                <div class="form-block">
+                    <div class="form-block__title">
+                        <div class='form-block__title-circle'>1</div>
+                        <h2>Маршрут</h2>
+
+                    </div>
+
+                    <div class="form-block__data">
+                        <div class="form-block__data-from">
+                            <label class="form__label" for="from">Откуда</label>
+                            <input class="form__input-text_long" type="text" id="from" name="route">
+                        </div>
+
+                        <div>
+                            <label class="form__label" for="to">Куда</label>
+                            <input class="form__input-text_long" type="text" id="to" name="route">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-block">
+                    <div class="form-block__title">
+                        <div class='form-block__title-circle'>2</div>
+                        <h2>Транспорт</h2>
+
+                    </div>
+
+                    <div class="form-block__data form-block__data-transport">
+                        <div class="form-block__data-weight">
+                            <h3 class="form__label">Грузоподъёмность</h3>
+                            <div class="form-select" data-state="" id="weight">
+
+                                <div class="form-select__title" data-default="Option 0">Не выбрана</div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                                </svg>
+                                <div class="form-select__content">
+                                    <input id="singleSelect0" class="form-select__input" type="radio"
+                                        name="singleSelect" disabled />
+                                    <label for="singleSelect0" class="form-select__label">Не выбрана</label>
+                                    <input id="singleSelect1" class="form-select__input" type="radio"
+                                        name="singleSelect" checked />
+                                    <label for="singleSelect1" class="form-select__label">Вариант 1</label>
+                                    <input id="singleSelect2" class="form-select__input" type="radio"
+                                        name="singleSelect" />
+                                    <label for="singleSelect2" class="form-select__label">Вариант 2</label>
+
+                                    <input id="singleSelect3" class="form-select__input" type="radio"
+                                        name="singleSelect" />
+                                    <label for="singleSelect3" class="form-select__label">Вариант 3</label>
+                                    <input id="singleSelect4" class="form-select__input" type="radio"
+                                        name="singleSelect" />
+                                    <label for="singleSelect4" class="form-select__label">Вариант 4</label>
+                                    <input id="singleSelect5" class="form-select__input" type="radio"
+                                        name="singleSelect" />
+                                    <label for="singleSelect5" class="form-select__label">Вариант 5</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="form-block__data-weight">
+                            <h3 class="form__label">Способ погрузки</h3>
+                            <div class="form-select" data-state="" id="load">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                                </svg>
+                                <div class="form-select__title" data-default="Option 0">Задняя</div>
+                                <div class="form-select__content">
+                                    <input id="singleSelect12" class="form-select__input" type="radio"
+                                        name="singleSelect" disabled />
+                                    <label for="singleSelect6" class="form-select__label">Задняя</label>
+                                    <input id="singleSelect7" class="form-select__input" type="radio"
+                                        name="singleSelect" />
+                                    <label for="singleSelect7" class="form-select__label">Передняя</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-block">
+                    <div class="form-block__title">
+                        <div class='form-block__title-circle'>3</div>
+                        <h2>Груз</h2>
+
+                    </div>
+
+                    <div class="form-block__data-wrapper">
+                        <div class="form-block__data-type">
+                            <h3 class="form__label">Тип груза</h3>
+                            <div class="form-select form-select__wide" data-state="" id="cargo-type">
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                                </svg>
+                                <div class="form-select__title" data-default="Option 0">Не выбран</div>
+                                <div class="form-select__content">
+                                    <input id="singleSelect8" class="form-select__input" type="radio"
+                                        name="singleSelect" checked />
+                                    <label for="singleSelect8" class="form-select__label">Задняя</label>
+                                    <input id="singleSelect9" class="form-select__input" type="radio"
+                                        name="singleSelect" />
+                                    <label for="singleSelect9" class="form-select__label">Передняя</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-block__data-class">
+                            <h3 class="form__label">Класс опасности</h3>
+                            <div class="form-select" data-state="" id="danger-class">
+                                <div class="form-select__title" data-default="Option 0">Класс 5 — Окисляющие вещества и органические перекиси
+                                </div>
+                                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1 0L4 3L7 0L8 1L4 5L0 1L1 0Z" fill="black"/>
+                                    </svg>
+                                <div class="form-select__content">
+                                    <input id="singleSelect10" class="form-select__input" type="radio"
+                                        name="singleSelect" checked />
+                                    <label for="singleSelect10" class="form-select__label">Задняя</label>
+                                    <input id="singleSelect11" class="form-select__input" type="radio"
+                                        name="singleSelect" />
+                                    <label for="singleSelect11" class="form-select__label">Передняя</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-block__data-value">
+                            <label class="form__label">Объявленная ценность, ₽</label>
+                            <input class="form__input-text_sm" type="number" id="value" name="value"
+                                placeholder="&ge;1">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control control-checkbox">
+                            Требуется температурный режим
+                            <input type="checkbox" />
+                            <div class="control_indicator"></div>
+                        </label>
+
+                        <div class="control-group__minmax">
+                            <div class="form-block__data-value">
+                                <label class="form__label">От, °C</label>
+                                <input class="form__input-text_sm" type="number" id="mintemp" name="value"
+                                    placeholder="&ge;1">
+                            </div>
+
+                            <div class="form-block__data-value">
+                                <label class="form__label">До, °C</label>
+                                <input class="form__input-text_sm" type="number" id="maxtemp" name="value"
+                                    placeholder="&ge;1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-block">
+                    <div class="form-block__title">
+                        <div class='form-block__title-circle'>4</div>
+                        <h2>Время</h2>
+
+                    </div>
+
+                    <div class="form-block__data">
+                        <div class="form-block__address">
+                            <div class="form-block__address-info">
+                                <h3 class="form__label">Когда прибыть на точку</h3>
+                                <p>700 км в день</p>
+                            </div>
+
+                            <div class="form-block__address-select">
+                                <div class="form-block__switch-group">
+                                    <div class="form-block__switch-group__item">
+                                        <label class="form-block__switch form-block__switch-radio">
+                                            Адрес не указан
+                                            <input type="radio" name="radio" checked="checked" />
+                                            <div class="form-block__switch_indicator"></div>
+                                        </label>
+
+                                        <button class="form-block__switch-group_btn">Не выбрано</button>
+                                    </div>
+
+                                    <div class="form-block__switch-group__item">
+                                        <label class="form-block__switch form-block__switch-radio">
+                                            Адрес не указан
+                                            <input type="radio" name="radio" />
+                                            <div class="form-block__switch_indicator"></div>
+                                        </label>
+
+                                        <button class="form-block__switch-group_btn">Не выбрано</button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-block__comment">
+                            <label class="form__label" for="comment">Комментарий к заказу</label>
+                            <textarea id="comment" class="form-block__comment-area"
+                                placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="advice">
+            <p class="advice__text">Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+            </p>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/js/script.min.js"></script>
+</body>
